@@ -1,0 +1,82 @@
+entry point:- 
+	main function
+
+	void main(){
+		print("Hello World!");
+	}
+
+Comments:-
+	Single line ->  // comment goes here
+	Multi line ->  /* comment goes here */
+
+Built in data-types:-
+	Numbers
+		int,double
+	Strings
+	Booleans
+	Lists
+	Maps
+	Runes
+	Symbols
+
+	Note:- All dataypes are objects. Default value will be 'null'.
+		If we use var, the datatypes is inferred based on the value
+
+	declaration:-
+		<datatype> <variable_name> = <value>
+	Eg:
+		int age = 10;
+		String name = "John";
+		bool isALive = true;
+		var age = 10;	here age is inferred as integer automatically.
+		String s1 = 'Single';
+		String s2 = "double";
+		String s3 = 'It\'s easy';
+		String s4 = "It's easy";
+		String s5 = 'This is a very long string.'
+			     'This is the remaining part of s5';
+		for the above string s5, we can either use '+' or just write as given above.
+ 
+
+final and const keywords:-
+
+	both are used for defining constant values which cannot be changed further.
+	final is initialized only when accessed in code
+	const is initialized when we compile the code
+	instance variable can only be final. If we want to make it const, use 'static const'.
+
+	Eg: final name = "JOHN";
+		or
+	    final String name = "JOHN";
+
+	    const PI = 3.14;
+
+String Interpolation:-
+	Eg:
+	String name = "John";
+	print("My name is " + name);
+	or
+	print("My name is $name");	\\ This is the String interpolation
+
+	print("Sum of $a and $b is ${a + b}");
+
+List(Array):-
+	1.fixed size
+		/* List<int> arr = List(5);	
+		or
+		var arr = List(5);
+
+		accessing elements:
+			arr[0] = 5;
+			arr[3] = 8; */
+	2.growable List
+		List<String> ls = [];	//size increase dynamically
+		or
+		List<String> ls = ["CANADA","USA"];
+
+		operation on growable list:
+			arr.add(5);		//element 5 will be added at the last index
+			arr.remove(5);	//element 5 will be deleted from the list and index will get adjusted automatically for the remaining elementsl
+			arr.removeAt(2)	//element at index 2 will be removed
+			arr.clear()		//all the elements will get deleted	
+	
